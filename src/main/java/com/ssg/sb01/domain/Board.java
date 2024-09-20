@@ -26,4 +26,11 @@ public class Board extends BaseEntity{
 
       @Column(length = 50,nullable = false)
       private String writer;
+
+
+      public void change(String title, String content){//제목이랑 내용만 수정 가능하도록 함
+            this.title = title;
+            this.content = content;
+      }
+
 }
